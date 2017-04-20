@@ -29,8 +29,8 @@ namespace MVVMSampleApplication.ViewModels
         }
         private void ExecAddEmployee()
         {
-            _regionManager.RequestNavigate("MainRegion", new Uri("AddEmployeeView", UriKind.Relative));
-
+            //_regionManager.RequestNavigate("MainRegion", new Uri("AddEmployeeView", UriKind.Relative));
+            _regionManager.RequestNavigate("MainRegion", new Uri("AdditionalView", UriKind.Relative));
         }
 
         private DelegateCommand _listEmployeesCommand;
